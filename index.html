@@ -9,12 +9,18 @@
            <img src="foto profil.jpg" alt="Foto profil saya">
            <h1>ilham fajar angkasa</h1>
            <p>Siswa SMA yang tertarik dengan teknologi dan desain. Selamat datang di website pertama saya!</p>
-           <a href="https://www.instagram.com/ilhamangkasa27"> kunjungi instagram saya </a>
-           <br><br> <!-- Menambahkan sedikit jarak vertikal agar tombol tidak menempel dengan link Instagram -->
+           <a href="https://instagram.com"> kunjungi instagram saya </a>
+           <br><br>
            <button id="sapaButton">Sapa Saya!</button> 
-       </div> <!-- Perbaikan: Tag penutup div untuk kartu-profil -->
+       </div>
 
-       <!-- Perbaikan: Memanggil file javascript Anda di sini agar tombol bisa diklik -->
-       <script src="script.js"></script>
-</body> <!-- Perbaikan: Tag penutup body -->
-</html> <!-- Perbaikan: Tag penutup html -->
+       <!-- Kita satukan kodenya di sini agar pasti terbaca oleh browser -->
+       <script>
+           const tombolSapa = document.getElementById('sapaButton');
+           
+           tombolSapa.addEventListener('click', function() {
+                alert('halo! terimakasih sudah berkunjung!');
+           });
+       </script>
+</body>
+</html>
